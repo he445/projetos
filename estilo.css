@@ -93,3 +93,16 @@
   background-color: #10066b;
   color: #e5e8e8;
 }
+
+footer{
+  margin: 0;
+  font-family:"Times New Roman";
+  font-size: 12px;
+  font-weight: 9px;
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color:  #e5e8e8;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;}
+
