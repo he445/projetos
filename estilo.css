@@ -50,9 +50,22 @@ section#contolador input{
   text-align: left;
 }
 
-#Projetos{display: none;}
-#contato{display: none;}
-#minhasskils{display: none;}
+#Projetos{display: none;
+  animation: go-back1 1s;}
+#contato{display: none;
+  animation: go-back 1s;}
+
+#minhasskils{display: none;
+  animation: go-back 1s;}
+
+  @keyframes go-back1 {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(20px);
+    }
+  } 
 
 @media (max-width: 900px) {
   .container {
