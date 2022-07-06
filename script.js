@@ -18,4 +18,5 @@ projetoli2.addEventListener("click",function () {
     minhasskils.style.display = "block";
     console.log("ok");
   });
+  
 }
