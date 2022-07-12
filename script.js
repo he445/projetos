@@ -6,8 +6,8 @@ window.onload = function () {
   let contato = document.querySelector("#contato");
   let minhasskils = document.querySelector("#minhasskils");
   let controlador = document.querySelector("#controlador");
-  let erro=document.querySelector("#erro")
-  
+  let erro = document.querySelector("#erro");
+
   projetoli1.addEventListener("click", function () {
     pojeto.style.display = "block";
     console.log("ok");
@@ -24,16 +24,23 @@ window.onload = function () {
     let key = e.which || e.keyCode;
 
     if (key == 13) {
-      if (controlador.value == "cd projetos") {  location.href = "#Projetos"; erro.innerHTML="$";
+      if (controlador.value == "cd projetos") {
+        location.href = "#Projetos";
+        erro.innerHTML = "$";
         pojeto.style.display = "block";
-      }
-     else if (controlador.value == "cd contato") { location.href = "#contato"; erro.innerHTML="$";
+      } else if (controlador.value == "cd contato") {
+        location.href = "#contato";
+        erro.innerHTML = "$";
         contato.style.display = "block";
-      }
-     else if (controlador.value == "cd minhasskils") { location.href = "#minhasskils"; erro.innerHTML="$"
+      } else if (controlador.value == "cd minhasskils") {
+        location.href = "#minhasskils";
+        erro.innerHTML = "$";
         minhasskils.style.display = "block";
+      } else {
+        erro.innerHTML =
+          "$ comando nao encontrado por favor insira cd+diretório ex: cd projetos";
+        console.log("erro");
       }
-      else{erro.innerHTML="$ comando nao encontrado por favor insira cd+diretório ex: cd projetos"; console.log("erro")}
     }
   });
 };
